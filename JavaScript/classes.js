@@ -96,7 +96,7 @@ class Zone {
         const drawX = (canvas.width / 2) - backgroundAnchor.x + this.position.x;
         const drawY = (canvas.height / 2) - backgroundAnchor.y + this.position.y;
 
-        ctx.fillStyle = 'rgba(255, 0, 0, 0.5)';
+        ctx.fillStyle = 'rgba(255, 0, 0, 0)';
         ctx.fillRect(drawX, drawY, this.width, this.height);
     }
 }
@@ -119,3 +119,4 @@ class ZoneRaum extends Zone {
         super({ ...props, width: 36, height: 36 });
     }
 }
+
