@@ -408,8 +408,8 @@ class GameController {
         document.querySelector('#SchwierigkeitsGrad').style.display = 'none';
         document.querySelector('#Titel').style.display = 'none';
         document.querySelector('#Interface').style.display = 'block'
-        //this.levelManager.startLevel(startLevel, player); // Ebene starten
-        this.levelManager.startLevel('EnglischRaum', player)
+        this.levelManager.startLevel(startLevel, player); // Ebene starten
+        //this.levelManager.startLevel('EnglischRaum', player)
         console.log(`Spiel ist jetzt im Zustand: ${this.state}`);
     }
 
@@ -490,4 +490,5 @@ window.addEventListener("orientationchange", checkOrientation);
 export const gameController = new GameController();
 console.log("GameController initialisiert:", gameController);
 gameController.initializeMenu();
+
 
